@@ -1,0 +1,15 @@
+{
+  "name": "distanceapp",
+  "version": "1.0.0",
+  "description": "REST API node js + oracle 19c; Created as part of the course work  on the Data Bases subject",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
