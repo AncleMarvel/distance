@@ -8,7 +8,7 @@ function initialize() {
     return new Promise((resolve, reject) => {
         const app = express();
         httpServer = http.createServer(app);
-        
+
         const morgan = require('morgan');
         app.use(morgan('combined'));
 
