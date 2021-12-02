@@ -2,7 +2,7 @@ module.exports = {
     hrPool: {
         user: "system",
         password: "oracle",
-        connectString: "0.0.0.0/orcl",
+        connectString: "localhost:1521/ORCL",
         poolMin: 10,
         poolMax: 10,
         poolIncrement: 0

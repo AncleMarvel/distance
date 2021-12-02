@@ -2,8 +2,6 @@ const webServer = require('./services/web-server.js');
 const database = require('./services/database.js');
 const dbConfig = require('./config/database.js');
 const defaultThreadPoolSize = 4;
-
-
 process.env.UV_THREADPOOL_SIZE = dbConfig.hrPool.poolMax + defaultThreadPoolSize;
 
 async function startup() {
@@ -27,6 +25,16 @@ async function startup() {
         console.error(err);
 
         process.exit(1); // Non-zero failure code
+    }
+
+    try {
+        console.log('Closing database module');
+
+        await database.close();
+    } catch (err) {
+        console.log('Encountered error', e);
+
+        err = err || e;
     }
 }
 
