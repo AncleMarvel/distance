@@ -4,6 +4,7 @@
   "description": "REST API node js + oracle 19c; Created as part of the course work  on the Data Bases subject",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "oracledb": "^5.3.0"
